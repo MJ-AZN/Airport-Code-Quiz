@@ -1,3 +1,12 @@
-//global variables
+const startButton = document.getElementById("main-menu")
+const questionContainerEl = document.getElementById("quiz")
 
-const timer = document
+startButton.addEventListener("click", startQuiz)
+
+function startQuiz(){
+    console.log("You are sane")
+    startButton.classList.add("hide")
+    quiz.classList.remove("hide")
+    setNextQuestion()
+}
+

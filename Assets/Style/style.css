@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color:#000000
+}
+
+body {
+    background-color: #0400f8;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main{
+    width: 800px;
+    max-width: 80%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.answers{
+    display: grid;
+    gap: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+.start-btn, .high-score-btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+}
+

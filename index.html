@@ -12,20 +12,28 @@
 <body>
     <!--Container for the whole web app-->
     <main>
-        <section id= "main-menu" class = "main-menu">
+        <section id="main-menu" class="main-menu">
             <h1>IATA Codes</h1>
             <h1>A World Traveler Quiz</h1>
-            <button id = "start-quiz" class = "start-btn">Start</button>
-            <button id = "high-scores" class = "high-score-btn">High Scores</button>
+            <button id="start-quiz" class="start-btn">Start</button>
+            <button id="high-scores" class="high-score-btn">High Scores</button>
         </section>
-        <section id = "quiz" class = "hide">
-            <div id = "question">Question</div>
-            <div id = "answers" class = "answers">
-                <button class = "btn">Answer 1</button>
-                <button class = "btn">Answer 2</button>
-                <button class = "btn">Answer 3</button>
-                <button class = "btn">Answer 4</button>
+        <section id="quiz" class="hide">
+            <div id="timer" class="timer">60</div>
+            <div id="question" class="question">Question</div>
+            <div id="answers" class="answers">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
             </div>
+        </section>
+        <section id="end-screen" class="hide">
+            <h2>Your Final Score: <span id="final-score"></span></h2>
+            <input type="text" id="initials" placeholder="Enter your initials">
+            <button class="start-btn" onclick="saveScore()">Save Score</button>
+            <button class="high-score-btn" onclick="goToMainMenu()">Go Back to Main Menu</button>
+            <ul id="high-scores-list"></ul>
         </section>
     </main>
 </body>
